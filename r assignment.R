@@ -1,0 +1,5 @@
+reg<-read.csv("regrex1.csv")
+plot(reg$y~reg$x, main="regression", xlab="x", ylab="y")
+lm(formula=reg$y~reg$x)
+model<-lm(formula=reg$y~reg$x)
+abline(model)
